@@ -15,11 +15,9 @@ Forecasting Germany's daily electricity consumption using a Seasonal ARIMA (SARI
 
 | Metric | Value |
 |--------|-------|
-| RMSE | — |
-| MAE | — |
-| MAPE | — |
-
-> Values populate when you run the notebook.
+| RMSE | 256.78 GWh |
+| MAE | 227.59 GWh |
+| MAPE | 15.65% |
 
 ## Methodology
 
@@ -60,7 +58,7 @@ The dataset is fetched automatically from a public URL — no manual downloads r
 
 - Electricity consumption shows strong **weekly seasonality** (lower on weekends) and **annual seasonality** (higher in winter months)
 - After seasonal + first-order differencing, the series passes both ADF and KPSS stationarity tests
-- SARIMA captures the repeating weekly pattern well, achieving sub-5% MAPE on the 90-day test set
+- SARIMA captures the repeating weekly pattern well, achieving 15.65% MAPE on the 90-day test set
 
 ## Potential Extensions
 
